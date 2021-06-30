@@ -124,6 +124,14 @@ FEATURES
     margin-right: 2em;
 }
 
+.features-example .example-text h2 {
+    font-size: 1.5em;
+}
+
+.features-example .example-text p {
+    font-size: 1em;
+}
+
 .fas {
     font-size: 3em;
     color: #003363;
