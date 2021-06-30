@@ -6,15 +6,20 @@
     border:0
 }
 
+body {
+    font-family: 'Quicksand', sans-serif;;
+    background-color: #0075E2;
+    color: #FFFFFF;
+}
+
 img {
     max-width: 100%;
     height: auto;
 }
 
-body {
-    font-family: 'Quicksand', sans-serif;;
-    background-color: #0075E2;
-    color: #FFFFFF;
+iframe {
+    width: 100%;
+    height: auto;
 }
 
 /********
@@ -22,6 +27,7 @@ HEADER
 ********/
 
 #header {
+    max-width: 100%;
     display: flex;
     align-items: center;
     padding-top: 0.6em;
@@ -33,7 +39,7 @@ HEADER
 }
 
 #header-img {
-    max-width: 200px;
+    max-width: 12em;
 }
 
 #nav-bar {
@@ -47,7 +53,10 @@ HEADER
 
 #nav-bar li {
     list-style: none;
-    padding-right: 4.5em;
+}
+
+#nav-bar .li-pd {
+    padding-right: 4em;
 }
 
 #nav-bar li a {
@@ -64,6 +73,7 @@ STARTED
 ********/
 
 #started {
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -110,7 +120,8 @@ FEATURES
 
 #features {
     margin: 0 auto;
-    width: 500px;
+    width: 560px;
+    max-width: 100%;
 }
 
 .features-example {
@@ -141,3 +152,59 @@ FEATURES
     margin-top: 3em;
 }
 
+.feature-video #video {
+    display: block;
+    margin-left: auto;
+    max-width: 560px;
+    height: 315px;
+}
+
+
+/**********
+MEDIA QUERY
+**********/
+
+@media (max-width: 925px) {
+    #nav-bar li {
+        padding-right: 1em;
+    }
+}
+
+@media (max-width: 804px) {
+    #nav-bar .li-pd {
+        padding-right: 0.8em;
+    }
+}
+
+@media (max-width: 600px) {
+    #header {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    #header #nav-bar {
+        padding-top: 1.5em;
+    }
+}
+
+@media (max-width: 527px) {
+    #header #nav-bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    #nav-bar ul li {
+        padding-top: 1.4em;
+    }
+    #features {
+        width: 350px;
+    } 
+}
+
+@media (max-width: 360px) {
+    .example-icon {
+        display: none !important;
+    }
+    .example-text h2, .example-text p {
+        text-align: center;
+    }
+}
