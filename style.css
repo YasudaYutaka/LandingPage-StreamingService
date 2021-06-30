@@ -67,7 +67,7 @@ STARTED
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 500px;
+    height: 17em;
     margin-top: 50px;
 }
 
@@ -103,3 +103,33 @@ STARTED
     color: #003363;
     border: 2px solid#003363;
 }
+
+/*********
+FEATURES
+*********/
+
+#features {
+    margin: 0 auto;
+    width: 500px;
+}
+
+.features-example {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2.2em;
+}
+
+.features-example .example-icon {
+    margin-right: 2em;
+}
+
+.fas {
+    font-size: 3em;
+    color: #003363;
+}
+
+.feature-video {
+    margin-top: 3em;
+}
+
