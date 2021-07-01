@@ -159,10 +159,120 @@ FEATURES
     height: 315px;
 }
 
+/**********
+PLANS
+**********/
+
+#premium {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.plans-grid {
+    display: flex;
+    flex-direction: row;
+}
+
+#premium h2 {
+    font-size: 2.5em;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15em;
+    margin-top: 2em;
+    padding: 1.5em;
+    background-color: white;
+    box-shadow: 0px 0px 18px -3px #000000;
+}
+
+.middle-plan {
+    background-color: #1E4263;
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+.plan h3 {
+    color: black;
+    font-weight: 800;
+    font-size: 2em;
+    margin-bottom: 0.7em;
+}
+
+.plan .plan-price {
+    color: black;
+    font-weight: 800;
+    font-size: 1.6em;
+}
+
+.plan .plan-month {
+    color: rgb(102, 99, 99);
+    font-weight: 600;
+}
+
+.benefits-list {
+    list-style: none;
+}
+
+.benefits-li {
+    display: flex;
+    margin: 1.5em 0 1.5em 0;
+}
+
+.benefit-icon i {
+    font-size: 1.2em;
+}
+
+.benefit-text {
+    margin-left: 0.6em;
+    color: rgb(102, 99, 99);
+}
+
+.checked {
+    margin-left: 0.3em;
+    color: rgb(34, 34, 34);
+    font-weight: 700;
+}
+
+.plan-btn {
+    padding: 14px 30px;
+    border-radius: 35px;
+    margin-bottom: 1em;
+    background-color: #00F05C;
+    color: white;
+    font-weight: 800;
+}
+
+.plan-btn:hover {
+    cursor: pointer;
+    width: 160px;
+}
+
+.plan-info {
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.middle-plan h3, .middle-plan .plan-price, .middle-plan .plan-month, .middle-plan .benefits-list .benefits-li .benefit-icon i, .middle-plan .benefits-li .benefit-text, .middle-plan .plan-info {
+    color: white;
+}
+
 
 /**********
 MEDIA QUERY
 **********/
+
+@media (max-width: 954px) {
+    .plan {
+        width: 10em;
+    }
+}
 
 @media (max-width: 925px) {
     #nav-bar li {
@@ -173,6 +283,19 @@ MEDIA QUERY
 @media (max-width: 804px) {
     #nav-bar .li-pd {
         padding-right: 0.8em;
+    }
+}
+
+@media (max-width: 740px) {
+    #premium {
+        justify-content: center;
+    }
+    .plans-grid {
+        flex-direction: column;
+    }
+    .middle-plan {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
