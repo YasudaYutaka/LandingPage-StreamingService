@@ -8,6 +8,7 @@
         <meta charset="UTF-8">
         <meta name="author" content="Rafael Yutaka Yasuda">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <script type="text/javascript" src="script.js"></script>
     </head>
 
     <body>
@@ -37,9 +38,9 @@
         <section id="started">
 
             <h2>All your music in one place</h2>
-            <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <form id="form">
                 <input name="email" id="email" type="email" placeholder="Enter your email address" required>
-                <input id="submit" class="submite-btn" type="submit" value="Get started">
+                <input id="submit" class="submite-btn" type="submit" value="Get started" onclick="addLocalStorage()">
             </form>
 
         </section>
